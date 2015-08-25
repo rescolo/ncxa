@@ -3,10 +3,11 @@ if [ ! "$1" ];then
     echo USAGE: $0 MESSAGE
     exit
 fi
+$message="$1"
 git pull origin master
-if [ -f nacx2 ]; then
-    cat ncxa2 > NCXA.geojson
-    git rm ncxa2
+if [ -f ncxa ]; then
+    cat ncxa > NCXA.geojson
+    git rm ncxa
     git commit -a -m "$message"
     git push origin master
 else
