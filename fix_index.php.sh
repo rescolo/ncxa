@@ -1,3 +1,4 @@
+#!/sr/bin/env bash
 if [ "$1" ];then
     share="$1"
 else

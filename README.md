@@ -1,8 +1,17 @@
 # ncxa
-Statit url: http://bl.ocks.org/d/21739285ca2b41b4b919
+(1) Static url: http://geojson.io/#id=github:rescolo/ncxa/blob/master/NCXA.geojson&map=10/6.3467/-75.1808
 
-This is an iframe embed, a snippet of HTML code you can copy and paste onto a webpage to add this map.
+TODO:
+* cp xml track into kml dir
+* upload to (1)
+* Save kml and upload to "My maps": https://www.google.com/maps/d/u/0/edit?mid=z2NCe4lIOjVA.kgQgTDLLMHfw
+* Save as geojson
+* copy saved file into local git repo
+* $ ./fix_index.php.sh HASH # with the share HASH
+* Include Share hash into commit as "Track name share:HASH"
+* Push into repo
+* Pull in /var/www
 
-<iframe frameborder="0" width="100%" height="300" src="http://bl.ocks.org/d/21739285ca2b41b4b919"></iframe>
+
 
 
