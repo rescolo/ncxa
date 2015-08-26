@@ -9,13 +9,14 @@ lastcoordinates=$(sed -r 's/(<\/coordinates>)/\1\n/g' "$file" | grep '<\/coordin
 iconpos=$(sed -r 's/(<\/coordinates>)/\1\n/g' "$file" | grep '<\/coordinates>' | sed -r 's/\ /\n/g' | head -n100 | grep '<\/coordinates>' | awk -F"<Point>" '{print $2}')
 
 if [ $DEBUG = True ];then
-    echo $lastcoordinates
-    echo $iconpos
+    >&2 echo $lastcoordinates
+    >&2 echo $iconpos
 fi
 sed -ri  's/(<coordinates>)[\.\,0-9\-]+(<\/coordinates>)/\1'$lastcoordinates'\2/' "$file"
 
 if [ $DEBUG = True ];then
-    echo "====Final File===="
-    sed -r 's/ /\n/g' "$file" | sed -r 's/(<\/coordinates>)/\1\n/'  | grep "$(echo $lastcoordinates|  sed -r 's/^\-//')"
+    >&2 echo "====Final File===="
+    linesed=$(sed -r 's/ /\n/g' "$file" | sed -r 's/(<\/coordinates>)/\1\n/'  | grep "$(echo $lastcoordinates|  sed -r 's/^\-//')")
+    >&2 echo $linesed
 fi
 
