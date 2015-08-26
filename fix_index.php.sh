@@ -16,6 +16,6 @@ Haga click sobre el icono <img src="iconob.png" alt="Abrir in wikiloc" height="3
 </center>
 EOF
 
-#git commit -am "$share"
-#git push origin master
+git commit -am "$share"
+git push origin master
 
