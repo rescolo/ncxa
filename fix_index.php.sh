@@ -3,6 +3,7 @@ if [ "$1" ];then
     share="$1"
 else
     echo 'USAGE: $0 "MESSAGE share:HASH"'
+    exit
 fi
 HASH=$(echo "$share" | grep share: | awk -F":" '{print $2}')
 
