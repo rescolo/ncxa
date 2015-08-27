@@ -3,11 +3,12 @@
 
 TODO:
 * cp kml track into kml dir
-* Fix the file names with
-  ./fix_names.sh N-1
-  where N is the N_* name of the last file withour intial zeroes. 
 * cd into kml and run
-  $ ./000_generate_full_kml.sh #change icon into last position for each track
+* Fix the file names with
+  $ ./000_fix_names.sh N-1
+  where N is the N_* name of the last file withour intial zeroes. 
+
+  $ ./000_generate_full_kml.sh N  #change icon into last position for each track
   which generates the file map_all.kml in the main dir
 * upload to (1)
 * Save kml and upload to "My maps": https://www.google.com/maps/d/u/0/edit?mid=z2NCe4lIOjVA.kgQgTDLLMHfw
