@@ -24,7 +24,8 @@ var map = L.mapbox.map('map', 'mapbox.streets')
 // So the CSV file must be on the same domain as the Javascript, or the server
 // delivering it should support CORS.
 var featureLayer = L.mapbox.featureLayer()
-    .loadURL('NCXA.geojson')
+    .loadURL('https://raw.githubusercontent.com/rescolo/ncxa/master/NCXA.geojson')
+//    .loadURL('NCXA.geojson')
     .addTo(map);
 </script>
 </body>
