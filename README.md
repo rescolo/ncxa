@@ -1,5 +1,7 @@
 # ncxa
-TOD: Change to mapbox: Check if several files can be loaded
+TOD0:
+*Change to mapbox: Check if several files can be loaded
+* Load geojson directly in Google Maps: https://developers.google.com/maps/tutorials/data/importing_data 
 (1) Static url: http://geojson.io/#id=github:rescolo/ncxa/blob/master/NCXA.geojson&map=10/6.3467/-75.1808
 
 TODO:
