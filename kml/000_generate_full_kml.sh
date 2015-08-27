@@ -20,4 +20,4 @@ for f in $fullist;do
 done
 >&2 echo processing...
 >&2 echo $fullist
-./000_catkml.sh "$fullist" > ../map_all.kml
+#./000_catkml.sh "$fullist" > ../map_all.kml
