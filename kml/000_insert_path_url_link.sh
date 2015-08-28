@@ -5,8 +5,11 @@ if [ ! "$1" ];then
 fi
 #WARNIG: Replace only the first instance!
 file="$1"
+DEBUG=False
 if [ "$(grep '<name>Path<\/name><description>' "$file")" ];then
-    >&2 echo already processed
+    if [ "$DEBUG" == True ];then
+	>&2 echo already processed
+    fi
     exit
 fi
 

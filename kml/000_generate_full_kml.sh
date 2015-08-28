@@ -24,5 +24,8 @@ done
 
 >&2 echo processing...
 >&2 echo $fullist
-echo ../map_all_${istart}_${iend}.kml
-#./000_catkml.sh "$fullist" > ../map_all_${istart}_${iend}.kml
+./000_catkml.sh "$fullist" > ../map_all_${istart}_${iend}.kml
+test=$(cat ../map_all_${istart}_${iend}.kml | sed -r 's/(<name>Path<\/name><description>)/\1\n/g' | grep "<name>Path<\/name><description>" | wc -l)
+if [ "$test" == $((1+$iend-$istart))  ];then
+    echo "TEST PASSED"
+fi

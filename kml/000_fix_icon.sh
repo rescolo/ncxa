@@ -3,7 +3,7 @@ if [ ! "$1" ];then
     echo USAGE $0 WIKILOC_KML_FILE
     exit
 fi
-DEBUG=True
+DEBUG=False
 file="$1"
 lastcoordinates=$(sed -r 's/(<\/coordinates>)/\1\n/g' "$file" | grep '<\/coordinates>' | sed -r 's/\ /\n/g' | tail -n2 | grep -v '<\/coordinates>')
 iconpos=$(sed -r 's/(<\/coordinates>)/\1\n/g' "$file" | grep '<\/coordinates>' | sed -r 's/\ /\n/g' | head -n100 | grep '<\/coordinates>' | awk -F"<Point>" '{print $2}')
