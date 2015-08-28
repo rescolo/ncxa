@@ -1,5 +1,5 @@
 if [ ! "$1" ];then
-    echo USAGE $0 i
+    echo USAGE $0 N-1
     exit
 fi
 files=$(ls -lt | awk '{print $9}' | grep -E '^[a-zA-Z]')
