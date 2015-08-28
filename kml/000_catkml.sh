@@ -10,6 +10,7 @@ echo -n "$header"
 list="$@"
 for file in $list;do
     ./000_fix_icon.sh "$file"
+    ./000_insert_path_url_link.sh  "$file"
     body=$(cat "$file" | awk -F"<Document>" '{print $2}' | awk -F"</Document>" '{print $1}')
     echo -n $body
 done
