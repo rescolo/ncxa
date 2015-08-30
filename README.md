@@ -12,7 +12,7 @@ TOD0:
   var x = (λ2-λ1) * Math.cos((φ1+φ2)/2);
   var y = (φ2-φ1);
   var d = Math.sqrt(x*x + y*y) * R;
-
+* https://www.mapbox.com/mapbox.js/example/v1.0.0/linking-to-external-data/
 
 (1) Static url: http://geojson.io/#id=github:rescolo/ncxa/blob/master/NCXA.geojson&map=10/6.3467/-75.1808
 
