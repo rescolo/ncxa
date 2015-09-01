@@ -25,7 +25,8 @@ TODO:
 
   $ ./000_generate_full_kml.sh Nini Nend 
   which generates the file map_all_Nini_Nend.kml in the main dir
-* togeojson map_all_Nini_Nend.kml > NCXA_Nini_Nend.geojson
+* togeojson map_all_Nini_Nend.kml > NCXA_Nini_Nend_tmp.geojson
+  TODO: perl -p -e 's/[\n\s]//g' NCXA_Nini_Nend_tmp.geojson > NCXA_Nini_Nend.geojson && NCXA_Nini_Nend_tmp.geojson 
 * tokml NCXA_Nini_Nend.geojson > map_Nini_Nend.kml
    and upload to "My maps": https://www.google.com/maps/d/u/0/edit?mid=z2NCe4lIOjVA.kgQgTDLLMHfw
 * copy saved file into local git repo
