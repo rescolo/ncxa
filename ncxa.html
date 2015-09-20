@@ -21,13 +21,17 @@
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoicmVzdHJlcG8iLCJhIjoiNDQwZGE1ZGJjNGQzOWZmOGI3M2VlMmZiODlhNWFmYjYifQ.hCbjYdHULFrVup7cDBFfww';
 var map = L.mapbox.map('map', 'mapbox.streets')
-    .setView([6.2308, -75.5906], 9);
+    .setView([6.2308, -75.5906], 8);
 
 L.control.fullscreen().addTo(map);
 // As with any other AJAX request, this technique is subject to the Same Origin Policy:
 // http://en.wikipedia.org/wiki/Same_origin_policy
 // So the CSV file must be on the same domain as the Javascript, or the server
 // delivering it should support CORS.
+var featureLayer = L.mapbox.featureLayer()
+    .loadURL('https://raw.githubusercontent.com/rescolo/ncxa/master/Antioquia.geojson')
+    .addTo(map);
+var featureLayer = L.mapbox.featureLayer()
 var featureLayer = L.mapbox.featureLayer()
     .loadURL('https://raw.githubusercontent.com/rescolo/ncxa/master/NCXA_1_100.geojson')
     .addTo(map);
