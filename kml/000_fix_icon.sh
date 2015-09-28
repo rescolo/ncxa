@@ -13,6 +13,7 @@ if [ $DEBUG = True ];then
     >&2 echo $iconpos
 fi
 sed -ri  's/(<coordinates>)[\.\,0-9\-]+(<\/coordinates>)/\1'$lastcoordinates'\2/' "$file"
+sed -ri  's/Trail distance:/Cycling distance:/' "$file"
 
 if [ $DEBUG = True ];then
     >&2 echo "====Final File===="

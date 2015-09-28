@@ -10,6 +10,6 @@ for file in $fullist;do
 
 done
 echo $km $m
-sed -ri "s/(div id='Distance'>Total recorrido: )[0-9]+/\1$km/" ../index.php
-sed -ri "s/(div id='Desnivel'>Desnivel total: )[0-9]+/\1$m/" ../index.php
+sed -ri "s/(>Total: )[0-9]+/\1$km/" ../index.html
+sed -ri "s/(>Desnivel: )[0-9]+/\1$m/" ../index.html
 
