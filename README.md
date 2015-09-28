@@ -25,8 +25,7 @@ TODO:
 
   $ ./000_generate_full_kml.sh Nini Nend 
   which generates the file map_all_Nini_Nend.kml in the main dir
-* $ togeojson map_all_Nini_Nend.kml > NCXA_Nini_Nend_tmp.geojson
-  $ perl -p -e 's/\n//g' NCXA_Nini_Nend.geojson | perl -p -e 's/\s{2,}//g' > NCXA_Nini_Nend_tmp.geojson && mv NCXA_Nini_Nend_tmp.geojson NCXA_Nini_Nend.geojson
+* $ ./togeojson map_all_Nini_Nend.kml # generates NCXA_Nini_Nend.geojson
 
 * Not working: tokml NCXA_Nini_Nend.geojson > map_Nini_Nend.kml
   Then save from http://geojson.io
