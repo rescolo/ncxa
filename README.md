@@ -21,9 +21,10 @@ TODO:
 * cd into kml and run
 * Fix the file names with
   $ ./000_fix_names.sh N-1
-  where N is the N_* name of the last file withour intial zeroes. 
+  where N is the N_* name of the last file without intial zeroes. 
 
   $ ./000_generate_full_kml.sh Nini Nend 
+  $ ./000_generate_full_kml.sh 201 400 
   which generates the file map_all_Nini_Nend.kml in the main dir
 * $ ./togeojson map_all_Nini_Nend.kml # generates NCXA_Nini_Nend.geojson
 
