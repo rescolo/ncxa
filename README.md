@@ -42,3 +42,5 @@ TODO:
 
 
 
+https://www.mapbox.com/mapbox.js/example/v1.0.0/interactivity-outside-map-layer/
+https://www.mapbox.com/mapbox.js/example/v1.0.0/legend-position/
