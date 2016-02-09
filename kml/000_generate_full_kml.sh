@@ -29,3 +29,4 @@ test=$(cat ../map_all_${istart}_${iend}.kml | sed -r 's/(<name>Path<\/name><desc
 if [ "$test" == $((1+$iend-$istart))  ];then
     echo "TEST PASSED"
 fi
+./000_statistics.sh
