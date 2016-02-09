@@ -18,8 +18,8 @@ TOD0:
 
 TODO:
 * cp kml track into kml dir
-* cd into kml and run
-* Fix the file names with
+
+* Add the 'NNN_' prefix manually or for a batch of files use:
   $ ./000_fix_names.sh N-1
   where N is the N_* name of the last file without intial zeroes. 
 
